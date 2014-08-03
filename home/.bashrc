@@ -114,3 +114,20 @@ if ! shopt -oq posix; then
 fi
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+
+# Path to the bash it configuration
+export BASH_IT=$HOME/.bash_it
+
+# Lock and Load a custom theme file
+# location /.bash_it/themes/
+export BASH_IT_THEME='bobby'
+
+# Set my editor and git editor
+export EDITOR="/usr/bin/subl -w"
+export GIT_EDITOR='/usr/bin/subl -w'
+
+# Don't check mail when opening terminal.
+unset MAILCHECK
+
+# Load Bash It
+source $BASH_IT/bash_it.sh
